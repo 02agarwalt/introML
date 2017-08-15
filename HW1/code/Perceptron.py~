@@ -1,0 +1,5 @@
+from cs475_types import Predictor
+
+def class Perceptron(Predictor):
+    def __init__(self):
+        

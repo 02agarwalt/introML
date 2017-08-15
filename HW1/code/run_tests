@@ -1,0 +1,127 @@
+python classify.py --mode train --algorithm averaged_perceptron --model-file easy.avgperceptron.model --data easy.train
+
+python classify.py --mode test --model-file easy.avgperceptron.model --data easy.dev --predictions-file easy.avgperceptron.pred
+
+echo "Easy AVG" 
+python compute_accuracy.py easy.dev easy.avgperceptron.pred
+
+
+
+python classify.py --mode train --algorithm averaged_perceptron --model-file hard.avgperceptron.model --data hard.train
+
+python classify.py --mode test --model-file hard.avgperceptron.model --data hard.dev --predictions-file hard.avgperceptron.pred
+
+echo "Hard AVG" 
+python compute_accuracy.py hard.dev hard.avgperceptron.pred
+
+
+
+python classify.py --mode train --algorithm averaged_perceptron --model-file finance.avgperceptron.model --data finance.train
+
+python classify.py --mode test --model-file finance.avgperceptron.model --data finance.dev --predictions-file finance.avgperceptron.pred
+
+echo "Finance AVG" 
+python compute_accuracy.py finance.dev finance.avgperceptron.pred
+
+
+
+python classify.py --mode train --algorithm averaged_perceptron --model-file nlp.avgperceptron.model --data nlp.train
+
+python classify.py --mode test --model-file nlp.avgperceptron.model --data nlp.dev --predictions-file nlp.avgperceptron.pred
+
+echo "NLP AVG" 
+python compute_accuracy.py nlp.dev nlp.avgperceptron.pred
+
+
+
+python classify.py --mode train --algorithm averaged_perceptron --model-file bio.avgperceptron.model --data bio.train
+
+python classify.py --mode test --model-file bio.avgperceptron.model --data bio.dev --predictions-file bio.avgperceptron.pred
+
+echo "Bio AVG" 
+python compute_accuracy.py bio.dev bio.avgperceptron.pred
+
+
+
+python classify.py --mode train --algorithm averaged_perceptron --model-file speech.avgperceptron.model --data speech.train
+
+python classify.py --mode test --model-file speech.avgperceptron.model --data speech.dev --predictions-file speech.avgperceptron.pred
+
+echo "Speech AVG" 
+python compute_accuracy.py speech.dev speech.avgperceptron.pred
+
+
+
+python classify.py --mode train --algorithm averaged_perceptron --model-file vision.avgperceptron.model --data vision.train
+
+python classify.py --mode test --model-file vision.avgperceptron.model --data vision.dev --predictions-file vision.avgperceptron.pred
+
+echo "Vision AVG" 
+python compute_accuracy.py vision.dev vision.avgperceptron.pred
+
+
+
+
+
+
+
+python classify.py --mode train --algorithm perceptron --model-file easy.perceptron.model --data easy.train
+
+python classify.py --mode test --model-file easy.perceptron.model --data easy.dev --predictions-file easy.perceptron.pred
+
+echo "Easy" 
+python compute_accuracy.py easy.dev easy.perceptron.pred
+
+
+
+python classify.py --mode train --algorithm perceptron --model-file hard.perceptron.model --data hard.train
+
+python classify.py --mode test --model-file hard.perceptron.model --data hard.dev --predictions-file hard.perceptron.pred
+
+echo "Hard" 
+python compute_accuracy.py hard.dev hard.perceptron.pred
+
+
+
+python classify.py --mode train --algorithm perceptron --model-file finance.perceptron.model --data finance.train
+
+python classify.py --mode test --model-file finance.perceptron.model --data finance.dev --predictions-file finance.perceptron.pred
+
+echo "Finance" 
+python compute_accuracy.py finance.dev finance.perceptron.pred
+
+
+
+python classify.py --mode train --algorithm perceptron --model-file nlp.perceptron.model --data nlp.train
+
+python classify.py --mode test --model-file nlp.perceptron.model --data nlp.dev --predictions-file nlp.perceptron.pred
+
+echo "NLP" 
+python compute_accuracy.py nlp.dev nlp.perceptron.pred
+
+
+
+python classify.py --mode train --algorithm perceptron --model-file bio.perceptron.model --data bio.train
+
+python classify.py --mode test --model-file bio.perceptron.model --data bio.dev --predictions-file bio.perceptron.pred
+
+echo "Bio" 
+python compute_accuracy.py bio.dev bio.perceptron.pred
+
+
+
+python classify.py --mode train --algorithm perceptron --model-file speech.perceptron.model --data speech.train
+
+python classify.py --mode test --model-file speech.perceptron.model --data speech.dev --predictions-file speech.perceptron.pred
+
+echo "Speech" 
+python compute_accuracy.py speech.dev speech.perceptron.pred
+
+
+
+python classify.py --mode train --algorithm perceptron --model-file vision.perceptron.model --data vision.train
+
+python classify.py --mode test --model-file vision.perceptron.model --data vision.dev --predictions-file vision.perceptron.pred
+
+echo "Vision" 
+python compute_accuracy.py vision.dev vision.perceptron.pred
